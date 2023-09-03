@@ -64,6 +64,8 @@ main{
   /* Estilos para quando o menu é exibido após clicar no botão */
   #menu-list.show {
     display: flex;
+    font-size: 20px; /* Aumenta o tamanho da fonte */
+    height: 200px; /* Aumenta a altura do menu */
   }
 }
 /* ------------------------------------------------------------------ */
