@@ -52,6 +52,10 @@ main{
     flex-direction: column;
     width: auto;
   }
+    /* Oculta o <a> quando o menu está expandido */
+  #menu-list.show + a {
+    display: none;
+  }
 
   #menu-toggle {
     display: block; /* Mostra o botão hamburguer */
