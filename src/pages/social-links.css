@@ -1,7 +1,21 @@
-#social-box
+#social
 {
     display: flex;
     flex-direction: column; /* Alinha verticalmente */
     justify-content: center; /* Centraliza verticalmente */
-    height: 100vh; /* Certifique-se de que o contêiner pai ocupe toda a altura da viewport */
+    height: 60vh; /* Certifique-se de que o contêiner pai ocupe toda a altura da viewport */
+}
+
+#social-box{
+    padding-left: 5vw;
+}
+
+.social-btn{
+    width: 100px;
+    height: 100px;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 25px;
+    margin-bottom: 20px;
 }
