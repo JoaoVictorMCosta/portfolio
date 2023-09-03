@@ -1,0 +1,7 @@
+#social-box
+{
+    display: flex;
+    flex-direction: column; /* Alinha verticalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    height: 100vh; /* Certifique-se de que o contêiner pai ocupe toda a altura da viewport */
+}

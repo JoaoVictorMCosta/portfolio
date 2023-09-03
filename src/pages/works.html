@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORKS || &lt;JOAO_VICTOR&gt;</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="social-links.css">
+</head>
+<body>
+    <header>
+        <a href="#" id="redirectLink">&lt;Joao_Victor&gt;</a>
+        <nav id="menu">
+          <ul id="menu-list">
+            <li><a href="/src/pages/works.html">Works</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section id="social">
+            <div id="social-box">
+                <div class="social-links">
+                    <input type="button" value="GITHUB">
+                </div>
+                <div class="social-links">
+                    <input type="button" value="LINKEDIN">
+                </div>
+            </div>
+         </section>
+
+      </main>
+
+  <footer>
+        <p>Criador: João Victor M. da Costa</p>
+      </footer>
+
+      <script>
+        // Função para redirecionar sem mostrar o nome do arquivo na URL
+        function redirectToHomePage() {
+            var stateObj = { page: "index" };
+            history.pushState(stateObj, "index", "/");
+            window.location.href = "/";
+        }
+
+        // Vincular a função ao clique do link
+        document.getElementById("redirectLink").addEventListener("click", function (event) {
+            event.preventDefault();
+            redirectToHomePage();
+        });
+    </script>
+    
+</body>
+</html>
