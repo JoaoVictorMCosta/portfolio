@@ -28,7 +28,7 @@ document.getElementById('openGitHub').addEventListener('click', function() {
   var socialIframe = document.getElementById('socialIframe');
   if (socialIframe.style.display === 'none') {
       socialIframe.style.display = 'block'; // Mostrar o iframe
-      socialIframe.src="https://github.com/JoaoVictorMCosta";
+      socialIframe.src="http://www.github.com/JoaoVictorMCosta";
   } else {
       socialIframe.style.display = 'none'; // Ocultar o iframe se já estiver visível
       socialIframe.src=''; //Limpa o src e para a pagina de ser exibida
@@ -41,7 +41,7 @@ document.getElementById('openLinkedIn').addEventListener('click', function() {
   var socialIframe = document.getElementById('socialIframe');
   if (socialIframe.style.display === 'none') {
       socialIframe.style.display = 'block'; // Mostrar o iframe
-      socialIframe.src="https://www.linkedin.com/in/joaovictormdacosta/";
+      socialIframe.src="http://www.linkedin.com/in/joaovictormdacosta/";
   } else {
       socialIframe.style.display = 'none'; // Ocultar o iframe se já estiver visível
       socialIframe.src=''; //Limpa o src e para a pagina de ser exibida
