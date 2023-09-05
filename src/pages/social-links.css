@@ -1,9 +1,15 @@
-#social
-{
-    display: flex;
-    flex-direction: column; /* Alinha verticalmente */
-    justify-content: center; /* Centraliza verticalmente */
-    margin-top: 50px;
+main{
+    position: relative; /* Estabelece um contexto de posicionamento */
+    /* width: 100vw;
+    height: 100vh; Ajuste a altura conforme necessário */
+}
+
+#social {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .social-btn{
@@ -13,6 +19,6 @@
     background-color: rgb(0, 0, 0);
     color: white;
     border-radius: 25px;
-    margin-bottom: 20px;
-    margin: 40px;
+    box-shadow: 20px 20px 50px gray;
+    margin: 50px;
 }
