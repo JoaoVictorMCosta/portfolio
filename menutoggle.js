@@ -25,12 +25,25 @@ document.getElementById("logo").addEventListener("click", function (event) {
 
 // Mostra o iframe do github
 document.getElementById('openGitHub').addEventListener('click', function() {
-  var githubIframe = document.getElementById('githubIframe');
-  if (githubIframe.style.display === 'none') {
-      githubIframe.style.display = 'block'; // Mostrar o iframe
-      githubIframe.src="https://github.com/JoaoVictorMCosta";
+  var socialIframe = document.getElementById('socialIframe');
+  if (socialIframe.style.display === 'none') {
+      socialIframe.style.display = 'block'; // Mostrar o iframe
+      socialIframe.src="https://github.com/JoaoVictorMCosta";
   } else {
-      githubIframe.style.display = 'none'; // Ocultar o iframe se já estiver visível
-      githubIframe.src=''; //Limpa o src e para a pagina de ser exibida
+      socialIframe.style.display = 'none'; // Ocultar o iframe se já estiver visível
+      socialIframe.src=''; //Limpa o src e para a pagina de ser exibida
+  }
+});
+  
+
+// Mostra o iframe do linkedin
+document.getElementById('openLinkedIn').addEventListener('click', function() {
+  var socialIframe = document.getElementById('socialIframe');
+  if (socialIframe.style.display === 'none') {
+      socialIframe.style.display = 'block'; // Mostrar o iframe
+      socialIframe.src="https://www.linkedin.com/in/joaovictormdacosta/";
+  } else {
+      socialIframe.style.display = 'none'; // Ocultar o iframe se já estiver visível
+      socialIframe.src=''; //Limpa o src e para a pagina de ser exibida
   }
 });
