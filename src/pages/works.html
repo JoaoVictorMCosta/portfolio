@@ -9,8 +9,9 @@
 </head>
 <body>
     <header>
-        <a href="#" id="redirectLink">&lt;Joao_Victor&gt;</a>
+        <a href="" id="logo">&lt;Joao_Victor&gt;</a>
         <nav id="menu">
+          <button id="menu-toggle">☰</button> <!-- Botão hamburguer -->
           <ul id="menu-list">
             <li><a href="/src/pages/works.html">Works</a></li>
             <li><a href="#">About</a></li>
@@ -20,17 +21,16 @@
       </header>
 
       <main>
-        <h1>Alguns trabalhos feitos:</h1>
+        <h1>Alguns dos trabalhos em que participei:</h1>
         <section id="social">
             <div id="social-box">
                 <div class="social-links">
-                    <input type="button" value="GITHUB" class="social-btn" alt="Github">
-                </div>
-                <div class="social-links">
+                    <input type="button" value="GITHUB" id="openGitHub" class="social-btn" alt="Github">
                     <input type="button" value="LINKEDIN" class="social-btn" alt="LinkedIn">
                 </div>
             </div>
-         </section>
+        </section>
+        <iframe id="githubIframe" src="https://github.com/JoaoVictorMCosta" frameborder="0" style="display: none;"></iframe>
 
       </main>
 
@@ -38,20 +38,8 @@
         <p>Criador: João Victor M. da Costa</p>
       </footer>
 
-      <script>
-        // Função para redirecionar sem mostrar o nome do arquivo na URL
-        function redirectToHomePage() {
-            var stateObj = { page: "index" };
-            history.pushState(stateObj, "index", "/");
-            window.location.href = "/";
-        }
-
-        // Vincular a função ao clique do link
-        document.getElementById("redirectLink").addEventListener("click", function (event) {
-            event.preventDefault();
-            redirectToHomePage();
-        });
-    </script>
+      <script src="/menutoggle.js"></script>
+      
     
 </body>
 </html>

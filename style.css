@@ -25,6 +25,10 @@ header{
     padding: 0;
 }
 
+#menu-toggle{
+    display: none;
+}
+
 #menu-list{
     width: 300px;
     display: flex;
@@ -41,28 +45,42 @@ ul,li,a{
 
 
 main{
-     color: black;
      flex-grow: 1;
-}  
+     margin: 2%;
+} 
+
+h1{
+  border: none;
+  border-radius: 10px;
+  background-color: #e0e0e0;
+  padding: 10px;
+  width:fit-content;
+}
+
+.social-links{
+  display:flex;
+}
+
+#githubIframe{
+  width: 95vw;
+  height: 90vh;
+}
 /* -------------------------------------------------------- */
 /* Estilos para telas menores (responsivo) */
 @media screen and (max-width: 768px) {
   #menu-list {
     display: none; /* Oculta o menu por padrão */
     flex-direction: column;
-    width: auto;
+    
   }
-    /* Oculta o <a> quando o menu está expandido */
-  #menu-list.show + a {
-    display: none;
-  }
-
   #menu-toggle {
+    color: white;
     display: block; /* Mostra o botão hamburguer */
     background: none;
     border: none;
     font-size: 24px;
     cursor: pointer;
+    float: right;
   }
 
   /* Estilos para quando o menu é exibido após clicar no botão */
@@ -70,6 +88,12 @@ main{
     display: flex;
     font-size: 20px; /* Aumenta o tamanho da fonte */
     height: 200px; /* Aumenta a altura do menu */
+    align-items: center;
+    width: 90vw;
+    height: 90vh;
+  }
+  #logo.hidden{
+    display: none;
   }
 }
 /* ------------------------------------------------------------------ */
